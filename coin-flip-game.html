@@ -1,0 +1,32 @@
+<!-- For exercises 6f to 6j -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 6d</title>
+  </head>
+  <body>
+    <script>
+      let randomNum = Math.random();
+      let result;
+      let userGuess = "heads";
+
+      // Normal if-statements
+      // if (randomNum < 0.5) {
+      //   result = "heads";
+      // } else {
+      //   result = "tails";
+      // }
+
+      // if (userGuess === result) {
+      //   console.log("You win!");
+      // } else {
+      //   console.log("You lose!");
+      // }
+
+      // Ternary operator version of above code
+      result = randomNum < 0.5 ? "heads" : "tails";
+
+      userGuess === result ? console.log("You win!") : console.log("You lose!");
+    </script>
+  </body>
+</html>
