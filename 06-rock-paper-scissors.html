@@ -19,12 +19,12 @@
 
     if (computerPick === 'rock') {
       result = 'Tie.';
-      computerScore++;
     } else if (computerPick === 'paper') {
       result = 'You lose.';
-      userScore++;
+      computerScore++;
     } else if (computerPick === 'scissors') {
       result = 'You win.';
+      userScore++;
     }
 
     alert(`You picked rock. Computer picked ${computerPick}. ${result}`);
