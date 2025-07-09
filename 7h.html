@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 7h</title>
+  </head>
+  <body>
+    <script>
+      function convertLength(length, from, to) {
+        if (from === to) {
+          return length + " " + to;
+        } else if (to === "km") {
+          return milesToKm(length) + " km";
+        } else if (to === "miles") {
+          return kmToMiles(length) + " miles";
+        } else if (to === "ft") {
+          return unitToFeet(length, from) + " ft";
+        }
+
+        return "That is not a valid operation.";
+      }
+
+      function milesToKm(length) {
+        return length * 1.6;
+      }
+
+      function kmToMiles(length) {
+        return length / 1.6;
+      }
+
+      function unitToFeet(length, unit) {
+        if (unit === "miles") {
+          return length * 5280;
+        } else if (unit === "km") {
+          return length * 3281;
+        }
+      }
+
+      console.log(convertLength(5, "miles", "km"));
+      console.log(convertLength(5, "miles", "ft"));
+      console.log(convertLength(5, "km", "ft"));
+    </script>
+  </body>
+</html>
