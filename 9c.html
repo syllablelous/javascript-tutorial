@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 9c</title>
+  </head>
+  <body>
+    <button onclick="flipCoin('heads')">heads</button>
+    <button onclick="flipCoin('tails')">tails</button>
+    <p class="js-outcome-text"></p>
+    <script>
+      function flipCoin(side) {
+        document.querySelector(
+          ".js-outcome-text"
+        ).innerHTML = `You chose: ${side}`;
+      }
+    </script>
+  </body>
+</html>

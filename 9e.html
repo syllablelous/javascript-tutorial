@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 9e</title>
+  </head>
+  <body>
+    <input
+      placeholder="Name"
+      class="js-input-field"
+      onkeydown="enterName(event)"
+    />
+    <button onclick="displayName();">Submit</button>
+    <p class="js-name-textfield"></p>
+    <script>
+      function enterName(event) {
+        if (event.key === "Enter") {
+          displayName();
+        }
+      }
+      function displayName() {
+        const name = document.querySelector(".js-input-field").value;
+
+        document.querySelector(
+          ".js-name-textfield"
+        ).innerHTML = `Your name is ${name}`;
+      }
+    </script>
+  </body>
+</html>
