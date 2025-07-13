@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 10i and 10j</title>
+    <link rel="stylesheet" href="styles/10i+j.css" />
+  </head>
+  <body>
+    <p class="js-calculation-text calculation-text"></p>
+    <p>
+      <button onclick="updateCalculation('1')" class="button-key">1</button>
+      <button onclick="updateCalculation('2')" class="button-key">2</button>
+      <button onclick="updateCalculation('3')" class="button-key">3</button>
+      <button onclick="updateCalculation(' + ')" class="button-key operation">
+        +
+      </button>
+    </p>
+    <p>
+      <button onclick="updateCalculation('4')" class="button-key">4</button>
+      <button onclick="updateCalculation('5')" class="button-key">5</button>
+      <button onclick="updateCalculation('6')" class="button-key">6</button>
+      <button onclick="updateCalculation(' - ')" class="button-key operation">
+        -
+      </button>
+    </p>
+    <p>
+      <button onclick="updateCalculation('7')" class="button-key">7</button>
+      <button onclick="updateCalculation('8')" class="button-key">8</button>
+      <button onclick="updateCalculation('9')" class="button-key">9</button>
+      <button onclick="updateCalculation(' * ')" class="button-key operation">
+        *
+      </button>
+    </p>
+    <p>
+      <button onclick="updateCalculation('0')" class="button-key">0</button>
+      <button onclick="updateCalculation('.')" class="button-key">.</button>
+      <button onclick="updateCalculation('=')" class="button-key">=</button>
+      <button onclick="updateCalculation(' / ')" class="button-key operation">
+        /
+      </button>
+    </p>
+
+    <button onclick="updateCalculation('')" class="button-key clear-button">
+      Clear
+    </button>
+
+    <script src="scripts/10i+j.js"></script>
+  </body>
+</html>
